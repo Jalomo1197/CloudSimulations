@@ -20,6 +20,12 @@ Components such as host machines and their properties, virtual machines and thei
 ![Image of Host And Vms](./Images/HostAndVms.png)
 
 ### Costs
-Infrastructure cost given in the config file will be used for all three simulations.
+Infrastructure costs given in the config file will be used for all three simulations.
 
 ![Image of Costs](./Images/IaaSCosts.png)
+
+
+
+
+
+# Dependencies

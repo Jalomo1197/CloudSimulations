@@ -37,9 +37,12 @@ Datacenter VM Allocation Policy: First Fit
 
 
 ## Distinct Policies In Models
-### Model One
-### Model Two
-### Model Three
+The models are distinct in their pairs of virtual machine scheduler and cloutlet (application) scheduler.
+
+
+### Model One: VmSchedulerSpaceShared And CloudletSchedulerSpaceShared
+### Model Two: VmSchedulerTimeShared And CloudletSchedulerTimeShared
+### Model Three: VmSchedulerTimeShared And CloudletSchedulerCompletelyFair
 
 
 # Dependencies

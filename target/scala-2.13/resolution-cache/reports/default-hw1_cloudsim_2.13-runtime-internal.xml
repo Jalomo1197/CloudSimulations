@@ -7,8 +7,32 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20200923210751"/>
+		date="20200927170508"/>
 	<dependencies>
+		<module organisation="junit" name="junit">
+			<revision name="4.13" status="release" pubdate="20200101094447" resolver="public" artresolver="public" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="25069" time="207" location="/Users/alexisjalomo1197/.ivy2/cache/junit/junit/ivy-4.13.xml" searched="true" original-local-location="/Users/alexisjalomo1197/.ivy2/cache/junit/junit/ivy-4.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13.pom"/>
+				<caller organisation="default" name="hw1_cloudsim_2.13" conf="compile, runtime-internal, runtime, optional" rev="4.13" rev-constraint-default="4.13" rev-constraint-dynamic="4.13" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="381765" time="410" location="/Users/alexisjalomo1197/.ivy2/cache/junit/junit/jars/junit-4.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709160802" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="766" time="75" location="/Users/alexisjalomo1197/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="true" original-local-location="/Users/alexisjalomo1197/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="junit" name="junit" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.13"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="successful" details="" size="45024" time="209" location="/Users/alexisjalomo1197/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.gnieh" name="logback-config">
 			<revision name="0.3.1" status="release" pubdate="20181204113937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/gnieh/logback-config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -104,23 +128,21 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-classic">
-			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152059" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="7">
+			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152059" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="11446" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.3.0-alpha4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.3.0-alpha4/logback-classic-1.3.0-alpha4.pom"/>
 				<caller organisation="org.gnieh" name="logback-config" conf="default, compile, runtime, master" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.3.1"/>
 				<caller organisation="org.cloudsimplus" name="cloudsim-plus" conf="default, compile, runtime, master" rev="1.3.0-alpha4" rev-constraint-default="1.3.0-alpha4" rev-constraint-dynamic="1.3.0-alpha4" callerrev="4.3.4"/>
-				<caller organisation="default" name="hw1_cloudsim_2.13" conf="compile, runtime-internal, runtime, optional" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.1"/>
 				<artifacts>
 					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="239334" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.3.0-alpha4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.3.0-alpha4/logback-classic-1.3.0-alpha4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
+			<revision name="1.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.3.0-alpha4"/>
 				<caller organisation="org.gnieh" name="logback-config" conf="default, compile, runtime, master" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.3.1"/>
-				<caller organisation="default" name="hw1_cloudsim_2.13" conf="compile, runtime-internal, runtime, optional" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.1"/>
 				<artifacts>
 				</artifacts>
 			</revision>

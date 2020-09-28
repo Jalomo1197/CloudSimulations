@@ -4,7 +4,7 @@
 		module="hw1_cloudsim$sbt_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20200923210746"
+		publication="20200927170504"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

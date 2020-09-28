@@ -7,10 +7,10 @@
 		revision="0.1"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20200923210829"/>
+		date="20200927170513"/>
 	<dependencies>
 		<module organisation="org.cloudsimplus" name="cloudsim-plus">
-			<revision name="4.3.4" status="release" pubdate="20190430071727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cloudsimplus.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+			<revision name="4.3.4" status="release" pubdate="20190430071727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cloudsimplus.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
 				<license name="GPLv3" url="http://www.gnu.org/licenses/gpl-3.0.txt"/>
 				<metadata-artifact status="no" details="" size="5019" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.cloudsimplus/cloudsim-plus/ivy-4.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/cloudsimplus/cloudsim-plus/4.3.4/cloudsim-plus-4.3.4.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="4.3.4" rev-constraint-default="4.3.4" rev-constraint-dynamic="4.3.4" callerrev="0.1"/>
@@ -22,7 +22,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-lang3">
-			<revision name="3.7" status="release" pubdate="20171104131619" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+			<revision name="3.7" status="release" pubdate="20171104131619" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="13273" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="3.7" rev-constraint-default="3.7" rev-constraint-dynamic="3.7" callerrev="0.1"/>
@@ -34,7 +34,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.8.2" status="release" pubdate="20170919204242" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="2.8.2" status="release" pubdate="20170919204242" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3598" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/com.google.code.gson/gson/ivy-2.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/gson-2.8.2.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="0.1"/>
@@ -46,7 +46,7 @@
 			</revision>
 		</module>
 		<module organisation="org.gnieh" name="logback-config">
-			<revision name="0.3.1" status="release" pubdate="20181204113937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/gnieh/logback-config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+			<revision name="0.3.1" status="release" pubdate="20181204113937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/gnieh/logback-config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3055" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.gnieh/logback-config/ivy-0.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/gnieh/logback-config/0.3.1/logback-config-0.3.1.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="0.3.1" rev-constraint-default="0.3.1" rev-constraint-dynamic="0.3.1" callerrev="0.1"/>
@@ -58,7 +58,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-math3">
-			<revision name="3.6.1" status="release" pubdate="20160317123511" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+			<revision name="3.6.1" status="release" pubdate="20160317123511" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="11910" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.6.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="3.6.1" rev-constraint-default="3.6.1" rev-constraint-dynamic="3.6.1" callerrev="0.1"/>
@@ -70,7 +70,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-log4j12">
-			<revision name="1.7.28" status="release" pubdate="20190810032803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="1.7.28" status="release" pubdate="20190810032803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="5639" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.28.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.28/slf4j-log4j12-1.7.28.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.7.28" rev-constraint-default="1.7.28" rev-constraint-dynamic="1.7.28" callerrev="0.1"/>
@@ -82,7 +82,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.scala-logging" name="scala-logging_2.13">
-			<revision name="3.9.2" status="release" pubdate="20190612042457" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+			<revision name="3.9.2" status="release" pubdate="20190612042457" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3357" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.13/ivy-3.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="3.9.2" rev-constraint-default="3.9.2" rev-constraint-dynamic="3.9.2" callerrev="0.1"/>
@@ -94,7 +94,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.8.0-beta2" status="release" pubdate="20180321170143" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+			<revision name="1.8.0-beta2" status="release" pubdate="20180321170143" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="5344" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.8.0-beta2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.8.0-beta2/slf4j-api-1.8.0-beta2.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.8.0-beta2" rev-constraint-default="1.8.0-beta2" rev-constraint-dynamic="1.8.0-beta2" callerrev="0.1"/>
@@ -106,7 +106,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.4.0" status="release" pubdate="20191012022341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="4">
+			<revision name="1.4.0" status="release" pubdate="20191012022341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3138" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/com.typesafe/config/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.1"/>
@@ -117,8 +117,32 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.13" status="release" pubdate="20200101094447" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3714" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/junit/junit/ivy-4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13.pom"/>
+				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="4.13" rev-constraint-default="4.13" rev-constraint-dynamic="4.13" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="231402" time="810" location="/Users/alexisjalomo1197/.ivy2/cache/junit/junit/srcs/junit-4.13-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709160802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2617" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="32624" time="757" location="/Users/alexisjalomo1197/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="ch.qos.logback" name="logback-classic">
-			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152059" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="2">
+			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152059" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="11446" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.3.0-alpha4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.3.0-alpha4/logback-classic-1.3.0-alpha4.pom"/>
@@ -131,7 +155,7 @@
 			</revision>
 		</module>
 		<module organisation="log4j" name="log4j">
-			<revision name="1.2.17" status="release" pubdate="20120526044339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+			<revision name="1.2.17" status="release" pubdate="20120526044339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3670" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="0.1"/>
@@ -143,7 +167,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-core">
-			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152015" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="1.3.0-alpha4" status="release" pubdate="20180211152015" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="9070" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.3.0-alpha4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.3.0-alpha4/logback-core-1.3.0-alpha4.pom"/>
@@ -156,7 +180,7 @@
 			</revision>
 		</module>
 		<module organisation="com.sun.mail" name="javax.mail">
-			<revision name="1.6.0" status="release" pubdate="20170717145546" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+			<revision name="1.6.0" status="release" pubdate="20170717145546" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<license name="CDDL/GPLv2+CE" url="https://javaee.github.io/javamail/LICENSE"/>
 				<metadata-artifact status="no" details="" size="7034" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/com.sun.mail/javax.mail/ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.1"/>
@@ -192,7 +216,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.13.3" status="release" pubdate="20200625155211" resolver="public" artresolver="public" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.3/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="15">
+			<revision name="2.13.3" status="release" pubdate="20200625155211" resolver="public" artresolver="public" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.3/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="16">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2671" time="0" location="/Users/alexisjalomo1197/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.pom"/>
 				<caller organisation="default" name="hw1_cloudsim$sources" conf="compile" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="0.1" extra-info.apiURL="https://www.scala-lang.org/api/2.13.3/"/>

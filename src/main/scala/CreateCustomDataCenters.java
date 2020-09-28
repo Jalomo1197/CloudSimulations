@@ -70,9 +70,13 @@ public class CreateCustomDataCenters {
 
     public CreateCustomDataCenters() {
         logger = LoggerFactory.getLogger(CreateCustomDataCenters.class);
-        logger.info("Beginning of Creating Simulations");
-
         this.simulation = new CloudSim();
+        this.simulation2 = new CloudSim();
+        this.simulation3 = new CloudSim();
+    }
+
+    public void startSimulations(){
+        logger.info("Beginning of Creating Simulations");
         DatacenterBroker broker = createBrokers(simulation);
         List<Cloudlet> cloudletList = createCloudlets("CLOUDLET_DYNAMIC_LENGTH");
         Datacenter datacenter1 = createDatacenter(new VmSchedulerSpaceShared(), this.simulation);
@@ -87,7 +91,8 @@ public class CreateCustomDataCenters {
         Stats d1_stats = new Stats(finishedCloudlets).buildStatTable();
 
 
-        this.simulation2 = new CloudSim();
+
+
         DatacenterBroker broker2 = createBrokers(simulation2);
         List<Cloudlet> cloudletList2 = createCloudlets("CLOUDLET_DYNAMIC_LENGTH");
         Datacenter datacenter2 = createDatacenter(new VmSchedulerTimeShared(), this.simulation2);
@@ -101,8 +106,6 @@ public class CreateCustomDataCenters {
         addStatColumns(new CloudletsTableBuilder(finishedCloudlets2)).build();
         Stats d2_stats = new Stats(finishedCloudlets2).buildStatTable();
 
-
-        this.simulation3 = new CloudSim();
         DatacenterBroker broker3 = createBrokers(simulation3);
         List<Cloudlet> cloudletList3 = createCloudlets("CLOUDLET_DYNAMIC_LENGTH");
         Datacenter datacenter3 = createDatacenter(new VmSchedulerTimeShared(), this.simulation3);
@@ -115,10 +118,7 @@ public class CreateCustomDataCenters {
         final List<Cloudlet> finishedCloudlets3 =  broker3.getCloudletFinishedList();
         addStatColumns(new CloudletsTableBuilder(finishedCloudlets3)).build();
         Stats d3_stats = new Stats(finishedCloudlets3).buildStatTable();
-// new CloudletsTableBuilder(finishedCloudlets).addColumn()
-
     }
-
 
     private CloudletsTableBuilder addStatColumns(CloudletsTableBuilder table){
         table.addColumn(new TextTableColumn("CloudLet","CPU Time"), cloudlet -> new DecimalFormat("#.000").format(cloudlet.getActualCpuTime()));
@@ -201,7 +201,7 @@ public class CreateCustomDataCenters {
      * Creates Cloudlets and sets the properties of each application. these properties are specified in the config file
      * (VM_MIPS, VM_PES, VM_RAM, VM_BW, VM_SIZE)
      */
-    private List<Cloudlet> createCloudlets(String Type_of_Cloudlets){
+    public List<Cloudlet> createCloudlets(String Type_of_Cloudlets){
         final List<Cloudlet> cloudlets = new ArrayList<>();
         Map<Long, Integer> CloudletExecTime_N = new TreeMap<Long, Integer>();
         long length = (Type_of_Cloudlets.equals("CLOUDLET_MAX_LENGTH"))? CLOUDLET_MAX_LENGTH : ((Type_of_Cloudlets.equals("CLOUDLET_MIN_LENGTH"))? CLOUDLET_MIN_LENGTH : 1000);
@@ -253,13 +253,12 @@ public class CreateCustomDataCenters {
     }
 
     // Creates CloudletSimple with UtilizationModel:UtilizationModelFull
-    private Cloudlet createCloudlet( final long length) {
-       // UtilizationModel utilization = new UtilizationModelFull(); // TODO: inspect and modify
+    public Cloudlet createCloudlet( final long length) {
         final Cloudlet cloudlet = new CloudletSimple(length, CLOUDLET_PES);
         cloudlet
                 .setFileSize(CLOUDLET_FILE_SIZE)
                 .setOutputSize(CLOUDLET_OUTPUT_SIZE);
-              //  .setUtilizationModel(utilization);
+
         return cloudlet;
     }
 
@@ -267,7 +266,7 @@ public class CreateCustomDataCenters {
        Random int generator: Used to assign different Cloudlet lengths (MI) to simulate different branches taken
        in a Cloudlet execution
     */
-    private int getRandomNumberUsingInts(int min, int max) {
+    public static int getRandomNumberUsingInts(int min, int max) {
         Random random = new Random();
         return random.ints(min, max).findFirst().getAsInt();
     }
@@ -305,13 +304,13 @@ public class CreateCustomDataCenters {
         public Stats buildStatTable(){
             System.out.println("\n\nAverage Price Per Application| Income Of Running Cloutlets | Expenses Of Data Center Resources | Profit       | Profit Rate");
             System.out.println("-------------------------------------------------------------------------------------------------------------------------");
-            System.out.print( new DecimalFormat("#0.000000000000               ").format(TOTAL_PRICE/cloudletsRan));
+            System.out.print( new DecimalFormat("$#0.000000000000               ").format(TOTAL_PRICE/cloudletsRan));
             System.out.print( "|");
-            System.out.print( new DecimalFormat("#0.000000000000            ").format(TOTAL_PRICE));
+            System.out.print( new DecimalFormat("$#0.000000000000            ").format(TOTAL_PRICE));
             System.out.print( "|");
-            System.out.print( new DecimalFormat("#0.000000000000                   ").format(TOTAL_COST_OF_DATABASE_MODEL));
+            System.out.print( new DecimalFormat("$#0.000000000000                   ").format(-TOTAL_COST_OF_DATABASE_MODEL));
             System.out.print( "|");
-            System.out.print( new DecimalFormat("#0.0000000000").format(PROFIT));
+            System.out.print( new DecimalFormat("$#0.0000000000").format(PROFIT));
             System.out.print( "|");
             System.out.println( new DecimalFormat("#0.000000000000").format(PROFIT_RATE) + "%");
 

@@ -4,7 +4,7 @@
 		module="hw1_cloudsim$sources_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20200923210752"
+		publication="20200927170510"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

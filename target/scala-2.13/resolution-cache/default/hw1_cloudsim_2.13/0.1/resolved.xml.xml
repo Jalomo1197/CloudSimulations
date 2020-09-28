@@ -4,7 +4,7 @@
 		module="hw1_cloudsim_2.13"
 		revision="0.1"
 		status="integration"
-		publication="20200923210751"
+		publication="20200927170508"
 	>
 		<description>
 		HW1_CloudSim
@@ -34,9 +34,9 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.13.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe" name="config" rev="1.4.0" conf="compile->default(compile)"/>
 		<dependency org="org.cloudsimplus" name="cloudsim-plus" rev="4.3.4" conf="compile->default(compile)"/>
-		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" conf="compile->default(compile)"/>
 		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.28" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.13" rev="3.9.2" conf="compile->default(compile)"/>
 		<dependency org="org.gnieh" name="logback-config" rev="0.3.1" conf="compile->default(compile)"/>
+		<dependency org="junit" name="junit" rev="4.13" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

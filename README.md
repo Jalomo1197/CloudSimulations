@@ -24,8 +24,20 @@ Infrastructure costs given in the config file will be used for all three simulat
 
 ![Image of Costs](./Images/IaaSCosts.png)
 
+## Fixed Policies And Variables
+For all three models some policies and variables are constant. This is done to measure the effectiveness of more in depth policies. Too many differences will introduce much complexity and not allow for accurate analysis.   
+
+### constants
+Idle Virtual Machine Destruction Delay: 5 seconds
+Datacenter Broker: Datacenter Broker Simple
+Datacenter VM Allocation Policy: First Fit
 
 
+## Distinct Policies In Models
+### Model One
+### Model Two
+### Model Three
 
 
 # Dependencies
+![Project dependencies](./Images/Dep.png)

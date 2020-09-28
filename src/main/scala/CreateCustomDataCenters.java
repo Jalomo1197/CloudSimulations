@@ -141,7 +141,7 @@ public class CreateCustomDataCenters {
     // Creates a broker that is linked to a specified simulation
     private DatacenterBroker createBrokers(CloudSim simulation) {
         DatacenterBroker broker = new DatacenterBrokerSimple(simulation);
-        broker.setVmDestructionDelayFunction(vm -> 10.0);
+        broker.setVmDestructionDelayFunction(vm -> 5.0);
         logger.info("Broker created with vmDestructionDelay: 10 seconds & Broker Implementation: " + broker.getClass().getName());
         return broker;
     }

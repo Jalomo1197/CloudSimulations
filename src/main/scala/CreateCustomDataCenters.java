@@ -88,7 +88,7 @@ public class CreateCustomDataCenters {
         logger.info("End DataCenter One Simulation");
         final List<Cloudlet> finishedCloudlets =  broker.getCloudletFinishedList();
         addStatColumns(new CloudletsTableBuilder(finishedCloudlets)).build();
-        Stats d1_stats = new Stats(finishedCloudlets).buildStatTable();
+        Stats d1_stats = new Stats(finishedCloudlets);
 
 
 
@@ -104,7 +104,7 @@ public class CreateCustomDataCenters {
         logger.info("End DataCenter Three Simulation");
         final List<Cloudlet> finishedCloudlets2 =  broker2.getCloudletFinishedList();
         addStatColumns(new CloudletsTableBuilder(finishedCloudlets2)).build();
-        Stats d2_stats = new Stats(finishedCloudlets2).buildStatTable();
+        Stats d2_stats = new Stats(finishedCloudlets2);
 
         DatacenterBroker broker3 = createBrokers(simulation3);
         List<Cloudlet> cloudletList3 = createCloudlets("CLOUDLET_DYNAMIC_LENGTH");
@@ -117,7 +117,15 @@ public class CreateCustomDataCenters {
         logger.info("Start DataCenter Three Simulation");
         final List<Cloudlet> finishedCloudlets3 =  broker3.getCloudletFinishedList();
         addStatColumns(new CloudletsTableBuilder(finishedCloudlets3)).build();
-        Stats d3_stats = new Stats(finishedCloudlets3).buildStatTable();
+        Stats d3_stats = new Stats(finishedCloudlets3);
+
+
+        System.out.println("\nCLOUD MODEL ONE STATS:");
+        d1_stats.buildStatTable();
+        System.out.println("\nCLOUD MODEL TWO STATS:");
+        d2_stats.buildStatTable();
+        System.out.println("\nCLOUD MODEL THREE STATS:");
+        d3_stats.buildStatTable();
     }
 
     private CloudletsTableBuilder addStatColumns(CloudletsTableBuilder table){
@@ -302,13 +310,13 @@ public class CreateCustomDataCenters {
         }
 
         public Stats buildStatTable(){
-            System.out.println("\n\nAverage Price Per Application| Income Of Running Cloutlets | Expenses Of Data Center Resources | Profit       | Profit Rate");
+            System.out.println("Average Price Per Application| Income Of Running Cloutlets | Expenses Of Data Center Resources |     Profit     | Profit Rate");
             System.out.println("-------------------------------------------------------------------------------------------------------------------------");
             System.out.print( new DecimalFormat("$#0.000000000000               ").format(TOTAL_PRICE/cloudletsRan));
             System.out.print( "|");
             System.out.print( new DecimalFormat("$#0.000000000000            ").format(TOTAL_PRICE));
             System.out.print( "|");
-            System.out.print( new DecimalFormat("$#0.000000000000                   ").format(-TOTAL_COST_OF_DATABASE_MODEL));
+            System.out.print( new DecimalFormat("$#0.000000000000                ").format(-TOTAL_COST_OF_DATABASE_MODEL));
             System.out.print( "|");
             System.out.print( new DecimalFormat("$#0.0000000000").format(PROFIT));
             System.out.print( "|");

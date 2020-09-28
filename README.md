@@ -10,7 +10,7 @@ Varying prices for running customers' applications. Applications length (number 
 
 These prices (income), along with the data center costs (outcome), are used to produce a table show a table showing total profit and profit rate for a given data center model. Ultimately, useful for brokers to simulate buying the computing time cheaply and sell it at a good markup.
 
-![Image of Outputs Stats](./Images/stats.png)
+![Image of Outputs Stats](./Images/Stats.png)
 
 ## Cloud architecture and costs
 ### Components

@@ -37,12 +37,35 @@ Datacenter VM Allocation Policy: First Fit
 
 
 ## Distinct Policies In Models
-The models are distinct in their pairs of virtual machine scheduler and cloutlet (application) scheduler.
+The models are distinct in their pairs of virtual machine scheduler and cloudlet (application) scheduler.
+
+### Virtual Machine Scheduler Policies
+#### VMSchedulersSpaceShared
+This policy allocates the required CPU (PE) from a host to a virtual machine. Virtual machines cannot share processing elements (PEs/CPUs). When there is not enough PEs in the host, allocation fails.
+
+#### VmSchedulerTimeShared
+This policy allocates the required CPU (PE) from a host to a virtual machine. Virtual machines can share processing elements (PEs/CPUs).
+Each host will properly schedule processing elements for virtual machines running on that given host. Even distribution of CPU time among the virtual machines.
+
+### Cloudlet/Application Scheduler Policies
+
+#### CloudletSchedulerSpaceShared
+It considers there will be only one Cloudlet per VM. Other Cloudlets will be on a waiting list. 
+It also considers that the time to transfer Cloudlets to the Vm happens before Cloudlet starts 
+executing. I.e., even though Cloudlets must wait for CPU, data transfer happens as soon as 
+Cloudlets are submitted. This scheduler does not consider Cloudlet’s priorities to define an execution order.
+
+#### CloudletSchedulerTimeShared
+Cloudlets execute in time-shared manner in VM. Each VM has to have its own instance of a CloudletScheduler. This scheduler does not consider Cloudlets priorities to define execution order. If actual priorities are defined for Cloudlets, they are just ignored by the scheduler.
 
 
-### Model One: VmSchedulerSpaceShared And CloudletSchedulerSpaceShared
-### Model Two: VmSchedulerTimeShared And CloudletSchedulerTimeShared
-### Model Three: VmSchedulerTimeShared And CloudletSchedulerCompletelyFair
+#### CloudletSchedulerCompletelyFair
+It is a time-shared scheduler that shares CPU cores between running applications by preempting them after a time period (time-slice) to allow other ones to start executing during their time-slices.
+More CPU time will be distributed to Cloudlets/Application with higher priority. Priority of a Cloudlet/Application will be determined by the length of the cloud (meaning number of code instructions).
+
+##### Model One: VmSchedulerSpaceShared And CloudletSchedulerSpaceShared
+##### Model Two: VmSchedulerTimeShared And CloudletSchedulerTimeShared
+##### Model Three: VmSchedulerTimeShared And CloudletSchedulerCompletelyFair
 
 
 # Dependencies

@@ -28,8 +28,11 @@ Infrastructure costs given in the config file will be used for all three simulat
 For all three models some policies and variables are constant. This is done to measure the effectiveness of more in depth policies. Too many differences will introduce much complexity and not allow for accurate analysis.   
 
 ### constants
+
 Idle Virtual Machine Destruction Delay: 5 seconds
+
 Datacenter Broker: Datacenter Broker Simple
+
 Datacenter VM Allocation Policy: First Fit
 
 

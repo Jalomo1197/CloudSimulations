@@ -67,6 +67,9 @@ More CPU time will be distributed to Cloudlets/Application with higher priority.
 ##### Model Two: VmSchedulerTimeShared And CloudletSchedulerTimeShared
 ##### Model Three: VmSchedulerTimeShared And CloudletSchedulerCompletelyFair
 
+## Outcome
+With multiple runs a clear model was the winner and produce higher profit rates than the other models. This model was Model Three, due to its resource sharing nature. Cloudlets were able to fully utilize all resources available.
 
-# Dependencies
+## Dependencies
 ![Project dependencies](./Images/Dep.png)
+

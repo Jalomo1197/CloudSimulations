@@ -1,7 +1,0 @@
-Hi Alexis,
-
-Your grade for HW1 is 8%.
-
-1. -2% for not implementing the service provisioning models.
-
-Abhijeet

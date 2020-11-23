@@ -1,4 +1,4 @@
-# Homework 01: Cloud simulations using CloudSim Plus
+Cloud simulations using CloudSim Plus
 
 ## Overview
 Using [CloudSim Plus](http://cloudsimplus.org/), a simulation framework that models the cloud environments and operates different cloud models,
